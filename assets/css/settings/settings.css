@@ -1,0 +1,297 @@
+/*************************************************************GENERALES************************************************************/
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;1,900&display=swap');
+*{
+    font-family: 'Lato', sans-serif;
+}
+a{
+    text-decoration: none;
+}
+.setting-container{ 
+    width: 85%;
+    max-width: 960px;
+    margin: 0 auto;
+}
+.container-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.title-text{
+    color: #921f18;
+    font-size: 40px;
+    text-align: center;
+}
+/*************************************************************GENERALES************************************************************/
+/************************************************************ENCABEZADO************************************************************/
+.header{
+    color: #921f18;
+    padding: 0.6rem 0;
+    background-color: rgb(255,255,255,1);
+    /*
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;*/
+}
+.header-theme1{
+    border-bottom: 2px solid #909497;
+}
+/**/
+.header a{
+    text-decoration: none;
+    color: #921f18;
+}
+.logo a img{
+    height: 10vh;
+    width: 100%;
+}
+.menu-icon{
+    display: none;
+}
+.navigation ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.navigation ul li{
+    display: inline-block;
+}
+.navigation ul li a{
+    display: block;
+    padding: 0.5rem;
+    border-radius: 20px;
+    transition: all 0.4s linear;
+}
+.navigation ul li a:hover{
+    text-decoration: none;
+    background-color: #921f18;
+    color: #FDFEFE;
+}
+.link-hover:hover{
+    text-decoration: none;
+    background-color: #921f18;
+    color: #FDFEFE;
+}
+.btn.btn-outline-secondary{
+    border-color: #921f18;
+    background-color: #FDFEFE;
+    color: #921f18;
+}
+.btn.btn-outline-secondary:hover{
+    border-color: #921f18;
+    background-color: #921f18;
+    color: #FDFEFE;
+}
+@media only screen and (max-width: 700px) {
+    .menu-icon{
+        display: block;
+        cursor: pointer;
+        padding: 0.5rem 1rem;
+    }
+    .navigation{
+        width: 100%;
+        margin-top: 1rem;
+        opacity: 0.8;
+    }
+    .navigation ul{
+        display: none;
+        
+    }
+    .navigation ul.show{
+        display: block;
+    }
+    
+    .navigation ul li{
+        display: block;
+    }
+    .navigation ul li a{
+        display: block;
+        padding: 0.5rem 0;
+        padding-left: .8rem;
+        border-radius: 20px;
+        transition: all 0.4s linear;
+        opacity: 1;
+        color: #921f18;
+    }
+
+    .navigation ul li a:hover{
+        text-decoration: none;
+        background-color: #921f18;
+        color: #FDFEFE;
+    }
+}
+/************************************************************ENCABEZADO************************************************************/
+/*************************************************************Efecto Hover a una Imagen *************************************************************/
+.container__img{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90%;
+}
+.container__img figure{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 6px;
+    box-shadow: 0px 15px 25px rgba(0,0,0,0.5);
+    cursor: pointer;
+}
+.container__img figure img{
+    width: 100%;
+    height: 100%;
+    transition: all 500ms ease-out;
+}
+.container__img figure .cap{
+    position: absolute;
+    top:0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(29,61,84,.9);
+    transition: all 500ms ease-out;
+    opacity: 0;
+    visibility: hidden;
+    text-align: center;
+}
+.container__img figure:hover > .cap{
+    opacity: 1;
+    visibility: visible;
+}
+.container__img figure:hover > .cap h3{
+    margin-top: 25px;
+    margin-bottom: 15px;
+}
+.container__img figure:hover > img{
+    transform: scale(1.3);
+}
+.container__img figure .cap h3{
+    color: #FDFEFE;
+    font-weight: 400;
+    margin-bottom: 120px;
+    transition: all 500ms ease-out;
+    margin-top: 30px;
+    font-size: 12px;
+}
+.container__img figure .cap a{
+    color: #5DADE2;
+    text-transform: uppercase;
+}
+.container__img figure .cap a:hover{
+    text-decoration: none;
+    color: #7B7D7D;
+}
+.container__img figure .cap p{
+    color: #FDFEFE;
+    font-size: 10px;
+    line-height: 1.5;
+    width: 100%;
+    max-width: 190px;
+    margin: auto;
+    text-align: justify;
+}
+@media screen and (min-width: 375px) {
+    .container__img figure .cap h3{
+        font-size: 12px;
+    }
+    .container__img figure .cap p{
+        font-size: 10px;
+        max-width: 240px;
+    }
+}
+@media screen and (min-width: 425px) {
+    .container__img figure .cap h3{
+        font-size: 12px;
+    }
+    .container__img figure .cap p{
+        font-size: 10px;
+        max-width: 240px;
+    }
+}
+@media screen and (min-width: 768px) {
+    .container__img figure .cap h3{
+        font-size: 18px;
+    }
+    .container__img figure .cap p{
+        font-size: 12px;
+        max-width: 250px;
+    }
+}
+@media screen and (min-width: 1024px) {
+    .container__img figure .cap h3{
+        font-size: 20px;
+    }
+    .container__img figure .cap p{
+        font-size: 14px;
+        max-width: 310px;
+    }
+}
+@media screen and (min-width: 1440px) {
+    .container__img figure .cap h3{
+        font-size: 28px;
+    }
+    .container__img figure .cap p{
+        font-size: 16px;
+        max-width: 390px;
+    }
+}
+/*************************************************************Efecto Hover a una Imagen *************************************************************/
+/*************************************************************PIE DE PAGINA*************************************************************/
+footer hr{
+    background-color: #E6B0AA; 
+    width: 125px; 
+    height: 2px;
+}
+.icon-fotter, .col-md-3.mx-auto.mb-4, .list-unstyled li a{
+    color: #FDFEFE;
+}
+.icon-fotter:hover{
+    color: #921f18;
+}
+.list-unstyled li a:hover{
+    text-decoration: none;
+    color: #E6B0AA; 
+}
+#contact li i{
+    color: #E6B0AA; 
+}
+#contact b{
+    text-transform: uppercase;
+    color: #E6B0AA; 
+}
+#contact li span{
+    font-size: 13px;
+}
+.container-image-settings{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container-image{
+    position: relative;
+    height: 200px;
+    width: 200px;
+    float:left;
+}
+.container-image img{
+    position: absolute;
+    left: 0;
+    transition: opacity 0.1s ease-in-out;
+}
+.container-image img.top:hover{
+    opacity: 0;
+}
+.icon-fotter-settings{
+    color: #FFFFFF;
+}
+/*************************************************************PIE DE PAGINA*************************************************************/
+.registration{
+    color: #177ab9;
+}
+.registration:hover{
+    color: #5DADE2;
+}
+.titulos{
+    color: #177ab9;
+}

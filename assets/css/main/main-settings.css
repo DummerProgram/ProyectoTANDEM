@@ -1,0 +1,135 @@
+header{
+    width: 100%;
+    position: absolute;
+    top: 0;
+	z-index: 2;
+}
+/*************************************************************Sobre Nosotros*************************************************************/
+#about{
+    padding: 40px 0;
+}
+.about{
+    margin: 30px 0;
+    display: flex;
+}
+.about-icon .fas{
+    font-size: 60px;
+    color: #921f18;
+    margin-right: 20px;
+}
+.about-subtitle{
+    text-transform: capitalize;
+    color: #921f18;
+    font-size: 25px;
+}
+.about-info{
+    margin-top: 10px;
+    font-size: 18px;
+    line-height: 1.5;
+}
+@media screen and (min-width: 576px){
+    .about-center{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .about{
+        flex: 0 0 calc(50% - 16px);
+    }
+}
+@media screen and (min-width: 972px){
+    .about{
+        flex: 0 0 calc(50% - 16px);
+    }
+}
+/*************************************************************Sobre Nosotros*************************************************************/
+/*************************************************************Directorio-Articulos*************************************************************/
+.dir-art-img{
+    min-height: 500px;
+    background: url('/assets/images/main/background/background-1.jpg')center/cover no-repeat fixed;
+}
+.dir-art-text{
+    min-height: 500px;
+    height: 100%;
+    align-items: center;
+    background-color: #921f18;
+    columns: #000;
+    padding: 40px 0;
+}
+.dir-art-text h1{
+    color: #FDFEFE;
+    font-size: 40px;
+    text-transform: uppercase;
+    margin: 10px 0;
+}
+.dir-art-text p{
+    color: #FDFEFE;
+    margin: 20px 0;
+    line-height: 2;
+}
+.dir-art-text a{
+    display: inline-block;
+    text-transform: uppercase;
+    padding: 13px 20px;
+    border-radius: 200px;
+    font-weight: bold;
+    background-color: #D98880;
+    color: #FDFEFE;
+    border: 2px solid #921f18;
+    cursor: pointer;
+}
+.dir-art-text a:hover{
+    text-decoration: none;
+    background-color: #FDFEFE;
+    color: #921f18;
+}
+.dir-art-text-center{
+    width: 90%;
+    margin: 0 auto;
+}
+@media screen and (min-width: 776px){
+    .dir-art{
+        display: flex;
+        background-color: #921f18;
+    }
+    .dir-art-text{
+        flex: 0 0 30%;
+    }
+    .dir-art-img{
+        flex: 0 0 70%;
+        clip-path: polygon(0 0, 100% 0, 50% 100%, 0 100%);
+    }
+}
+/*************************************************************Directorio-Articulos*************************************************************/
+/*************************************************************Eventos*************************************************************/
+#events{
+    padding: 40px 0;
+}
+.carousel-item img{
+    width: 100%;
+}
+/*************************************************************Eventos*************************************************************/
+/*************************************************************Avisos y Convocatorias*************************************************************/
+#notices{
+    padding: 40px 0;
+}
+/*************************************************************Avisos y Convocatorias*************************************************************/
+/*************************************************************Redes Sociales*************************************************************/
+#social-icons{
+    height: 150px;
+    text-align: center;
+    padding: 50px 0;
+}
+#social-icons a{
+    display: inline-block;
+    transition: transform 2s ease, color 2s ease;
+}
+#social-icons a:hover{
+    transform:  translateY(-20px);
+}
+/*************************************************************Redes Sociales*************************************************************/
+/*************************************************************Videos*************************************************************/
+#videos{
+    padding-bottom: 40px;
+}
+/*************************************************************Videos*************************************************************/

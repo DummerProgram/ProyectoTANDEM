@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--Responsive design-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Site icon-->
+    <!-- <link rel="shortcut icon" href="assets/images/shortcutIcon/icon.png" type="image/png"> -->
+    <!--Normalizing site-->
+    <link rel="stylesheet" href="assets/css/settings/normalize.css">
+    <link rel="stylesheet" href="assets/css/settings/settings.css">
+    <link rel="stylesheet" href="assets/css/settings/carousel-settings.css">
+    <link rel="stylesheet" href="assets/css/main/main-settings.css">
+    <link rel="stylesheet" href="assets/css/main/main-slider.css">
+    <!--Page title-->
+    <title>TANDEM</title>
+    <!--Framework CSS Boostrap 4-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.css">
+</head>
+<body>
+    <!--ENCABEZADO-NAVEGACION-->
+    <header class="header">
+        <div class="setting-container container-header">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="assets/images/header/headerLogo.png" alt="image-header">
+                </a>
+            </div>
+            <span class="menu-icon"><i class="fas fa-bars"></i></span>
+            <nav class="navigation">
+                <ul class="show">
+                    <li><a href="#">Servicios</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li>
+                        <a class="link-hover" type="button" data-toggle="modal" data-target="#contactoModal">Contacto</a>
+                    </li>
+                    <!-- Buscador
+                    <li>
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Buscar" aria-label="Buscar"
+                                aria-describedby="basic-addon2">
+                            <div class="input-group-append">
+                                <button class="btn btn-outline-secondary" type="button">
+                                    <i class="fa fa-search" aria-hidden="true"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </li>
+                    Buscador -->
+                    <li>
+                        <a class="link-hover" type="button" data-toggle="modal" data-target="#sesionModal">Inicia Sesión</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!--ENCABEZADO-NAVEGACION-->
+    <!--ENCABEZADO-SLIDER-->
+    <div class="container-slider">
+        <div class="container-myslide animation-fade">
+            <div class="container-img-slider" style="background-image: url('assets/images/main/slider/slider-1.jpg');">
+                <div class="txt">
+                    <h1>Titulo 1</h1>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam, inventore.</p>
+                    <a href="#">Click aqui</a>
+                </div>
+            </div>
+        </div>
+        <div class="container-myslide animation-fade">
+            <div class="container-img-slider" style="background-image: url('assets/images/main/slider/slider-2.jpg');">
+                <div class="txt">
+                    <h1>Titulo 2</h1>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam, inventore.</p>
+                    <a href="#">Click aqui</a>
+                </div>
+            </div>
+        </div>
+        <div class="container-myslide animation-fade">
+            <div class="container-img-slider" style="background-image: url('assets/images/main/slider/slider-3.jpg');">
+                <div class="txt">
+                    <h1>Titulo 3</h1>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam, inventore.</p>
+                    <a href="#">Click aqui</a>
+                </div>
+            </div>
+        </div>
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        <div class="dotsbox" style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+    </div>
+    <!--ENCABEZADO-SLIDER-->
+    <!--CONTENIDO PRINCIPAL-->
+    <main>
+        <!--AREAS-->
+        <section class="setting-container mt-5 mb-5">
+            <div class="container-title">
+                <h2 class="title-text">Areas</h2>
+            </div>
+            <div class="d-flex justify-content-around mb-2">
+                <div class="p-2 align-self-center">
+                    <div class="card">
+                        <h5 class="card-header text-light" style="background-color:#921f18; border-color: white;">
+                            <i class="fa fa-plus-circle mr-2" aria-hidden="true"></i>
+                            Area
+                        </h5>
+                        <div class="card-body">
+                            <h5 class="card-title">Titulo del Area</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda,
+                                magnam.</p>
+                            <a href="#" class="btn btn-danger">Boton</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-2 align-self-center">
+                    <div class="card">
+                        <h5 class="card-header text-light" style="background-color:#921f18; border-color: white;">
+                            <i class="fa fa-plus-circle mr-2" aria-hidden="true"></i>
+                            Area
+                        </h5>
+                        <div class="card-body">
+                            <h5 class="card-title">Titulo del Area</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda,
+                                magnam.</p>
+                            <a href="#" class="btn btn-danger">Boton</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-2 align-self-center">
+                    <div class="card">
+                        <h5 class="card-header text-light" style="background-color:#921f18; border-color: white;">
+                            <i class="fa fa-plus-circle mr-2" aria-hidden="true"></i>
+                            Area
+                        </h5>
+                        <div class="card-body">
+                            <h5 class="card-title">Titulo del Area</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda,
+                                magnam.</p>
+                            <a href="#" class="btn btn-danger">Boton</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="d-flex justify-content-around">
+                <div class="p-2 align-self-center">
+                    <div class="card">
+                        <h5 class="card-header text-light" style="background-color:#921f18; border-color: white;">
+                            <i class="fa fa-plus-circle mr-2" aria-hidden="true"></i>
+                            Area
+                        </h5>
+                        <div class="card-body">
+                            <h5 class="card-title">Titulo del Area</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda,
+                                magnam.</p>
+                            <a href="#" class="btn btn-danger">Boton</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-2 align-self-center">
+                    <div class="card">
+                        <h5 class="card-header text-light" style="background-color:#921f18; border-color: white;">
+                            <i class="fa fa-plus-circle mr-2" aria-hidden="true"></i>
+                            Area
+                        </h5>
+                        <div class="card-body">
+                            <h5 class="card-title">Titulo del Area</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda,
+                                magnam.</p>
+                            <a href="#" class="btn btn-danger">Boton</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-2 align-self-center">
+                    <div class="card">
+                        <h5 class="card-header text-light" style="background-color:#921f18; border-color: white;">
+                            <i class="fa fa-plus-circle mr-2" aria-hidden="true"></i>
+                            Area
+                        </h5>
+                        <div class="card-body">
+                            <h5 class="card-title">Titulo del Area</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda,
+                                magnam.</p>
+                            <a href="#" class="btn btn-danger">Boton</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--AREAS-->
+        <!--DIRECTORIO Y ARTICULOS-->
+        <section id="dir-art" class="dir-art">
+            <article class="dir-art-img" style="background: url('assets/images/main/background/background-1.jpg')center/cover no-repeat fixed;"></article>
+            <article class="dir-art-text">
+                <div class="dir-art-text-center text-justify">
+                    <h1>Servicios</h1>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti, animi. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti, animi.</p>
+                    <a href="#">Explorar</a>
+                </div>
+                <div class="dir-art-text-center text-justify">
+                    <h1>Blog</h1>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti, animi. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti, animi.</p>
+                    <a href="#">Explorar</a>
+                </div>
+            </article>
+        </section>
+        <!--DIRECTORIO Y ARTICULOS-->
+        <!--REDES SOCIALES-->
+        <section class="setting-container mt-5 mb-5">
+            <div class="d-flex justify-content-around">
+                <img class="align-self-center" style="width: 5vw; height: 15vh;" src="assets/images/main/axes/LogoPuebla.png" alt="">
+                <img class="align-self-center" style="width: 20vw; height: 10vh;" src="assets/images/main/axes/LogoHacienda.png" alt="">
+                <img class="align-self-center" style="width: 5vw; height: 10vh;" src="assets/images/main/axes/LogoSat.png" alt="">
+            </div>
+        </section>
+        <!--REDES SOCIALES-->
+    </main>
+    <!--PIE DE PAGINA-->
+    <footer class="page-footer" style="background-color: #921f18;">
+        <div style="background-color: #D98880;">
+            <div class="container">
+                <div class="row py-4 d-flex align-items-center">
+                    <div class="col-md-12 text-center">
+                        <a href="#"><i class="fab fa-facebook-f icon-fotter mr-4"></i></a>
+                        <a href="#"><i class="fab fa-twitter icon-fotter mr-4"></i></a>
+                        <a href="#"><i class="fab fa-instagram icon-fotter mr-4"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp icon-fotter mr-4"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container text-center text-md-left mt-5">
+            <div class="row">
+                <div class="col-md-3 mx-auto mb-4">
+                    <h6 class="text-uppercase font-weight-bold">Enlaces</h6>
+                    <hr class="mb-4 mt-0 d-inline-block mx-auto ">
+                    <ul class="list-unstyled">
+                        <li class="my-2"><a href="index.html"><i class="fas fa-home mr-2"></i>Inicio</a></li>
+                        <li class="my-2"><a href="#"><i class="fas fa-tools mr-2"></i>Servicios</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 mx-auto mb-4">
+                    <h6 class="text-uppercase font-weight-bold">Servicios</h6>
+                    <hr class="mb-4 mt-0 d-inline-block mx-auto ">
+                    <ul class="list-unstyled">
+                        <li class="my-2"><a href="#"><i class="fas fa-tools mr-2"></i>Servicio 1</a></li>
+                        <li class="my-2"><a href="#"><i class="fas fa-tools mr-2"></i>Servicio 2</a></li>
+                        <li class="my-2"><a href="#"><i class="fas fa-tools mr-2"></i>Servicio 3</a></li>
+                        <li class="my-2"><a href="#"><i class="fas fa-tools mr-2"></i>Servicio 4</a></li>
+                        <li class="my-2"><a href="#"><i class="fas fa-tools mr-2"></i>Servicio 5</a></li>
+                        <li class="my-2"><a href="#"><i class="fas fa-tools mr-2"></i>Servicio 6</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 mx-auto mb-4">
+                    <h6 class="text-uppercase font-weight-bold">Contacto</h6>
+                    <hr class="mb-4 mt-0 d-inline-block mx-auto ">
+                    <ul class="list-unstyled">
+                        <li class="my-2">
+                            <i class="fas fa-home mr-2"></i>
+                            <b>Dirección:</b>
+                            <br><span>18 Sur 1700 Colonia Azcárate Puebla, Puebla.</span>
+                        </li>
+                        <li class="my-2">
+                            <i class="fas fa-phone mr-2"></i>
+                            <b>Teléfono:</b>
+                            <br><span>(222) 240 93 79</span>
+                        </li>
+                        <li class="my-2">
+                            <i class="fas fa-envelope mr-2"></i>
+                            <b>Correo:</b>
+                            <br><span>contacto@webyservicios.mx</span>
+                            <br><span>ecommerce_webyservicios@hotmail.com</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--PIE DE PAGINA-->
+    <!--Modal o VENTANAS EMERGENTES-->
+    <div class="modal fade" id="contactoModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Contáctanos</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="inputName">Nombre completo</label>
+                            <input type="text" class="form-control" id="inputName" placeholder="Ingresa tu nombre completo">
+                        </div>
+                        <div class="form-group">
+                            <label for="inputEmail1">Dirección de correo electrónico</label>
+                            <input type="email" class="form-control" id="inputEmail1" placeholder="Ingrese correo electrónico">
+                            <small id="emailHelp" class="form-text text-muted">Nunca compartiremos su correo electrónico con nadie más.</small>
+                        </div>
+                        <div class="form-group">
+                            <label for="inputNumber">Número telefonico</label>
+                            <input type="text" class="form-control" id="inputNumber" placeholder="Ingrese su número telefonico">
+                            <small id="numHelp" class="form-text text-muted">Nunca compartiremos su número telefonico con nadie más.</small>
+                        </div>
+                        <div class="form-group">
+                            <label for="helpTextarea1">¿Cómo podemos ayudar?</label>
+                            <textarea class="form-control" id="helpTextarea1" rows="3" placeholder="Descripción"></textarea>
+                            <small id="textHelp" class="form-text text-muted">Entre 8 y 72 caracteres</small>
+                        </div>
+                        <button type="submit" class="btn btn-primary" style="width: 100%;">Enviar Información</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Files Glider.js-->
+    <script src="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.js"></script>
+    <!--Icons Library -->
+    <script src="assets/js/settings/fotawesome.js"></script>
+    <!--Framework CSS Boostrap 5-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!--Files JavaScript-->
+    <script src="assets/js/settings/header.js"></script>
+    <script src="assets/js/main/main-header-slider.js"></script>
+    <script src="assets/js/main/section-slider.js"></script>
+</body>
+</html>

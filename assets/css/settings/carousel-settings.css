@@ -1,0 +1,50 @@
+#carousel.setting-container{
+    padding-bottom: 40px;
+}
+
+.carousel__container{
+    position: relative;
+    width: 100%;
+}
+.carousel__previous, .carousel__next{
+    position: absolute;
+	transform: translate(0, -50%);
+	font-size: 50px;
+	padding: 15px;
+	cursor: pointer;
+	color: #D98880;
+	transition: 0.1s;
+	-webkit-ms-user-select: none;
+}
+.carousel__previous:hover, .carousel__next:hover{
+	text-decoration: none;
+	color: #921f18;
+}
+.carousel__previous{
+    z-index:1;
+    top: 50%;
+    left: -5%;
+}
+.carousel__next{
+    top: 50%;
+    right: -5%;
+}
+.carousel__list{
+    overflow: hidden;
+}
+.carousel__indicator .glider-dot{
+    display: block;
+    width: 30px;
+    height: 4px;
+    background-color: #D98880;
+    border-radius: 0;
+}
+.carousel__indicator .glider-dot:hover{
+    background-color: #7B7D7D;
+}
+.carousel__indicator .glider-dot.active{
+    background-color: #921f18;
+}
+.carousel__element_padding{
+    padding: 10px;
+}
